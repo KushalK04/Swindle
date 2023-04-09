@@ -2,8 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import BottomNav from '@/Components/NavBarBottom'
 
 export default function Home() {
   return (
@@ -19,6 +18,7 @@ export default function Home() {
           <h1>Scam App</h1>
           <h3>Informing you about scams!</h3>
         </div>
+        <BottomNav/>
       </main>
     </>
   )

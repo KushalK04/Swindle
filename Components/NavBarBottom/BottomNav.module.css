@@ -1,0 +1,22 @@
+.cont {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #01161e;
+}
+
+.info {
+  width: 89%;
+  margin-top: 18%;
+  margin-bottom: 8%;
+}
+
+.res {
+  margin-top: 21%;
+  margin-bottom: 8%;
+}
+
+.ab {
+  margin-top: 21%;
+  margin-bottom: 8%;
+}
