@@ -1,17 +1,15 @@
-<<<<<<< HEAD
-body {
-    margin: 0;
-    padding: 0;
-=======
 :root {
     --accents: #F06543;
     --white: #FFFFFF;
     --contrast-main2: #598392;
     --main-back: #153B50;
     --dark: #01161E;
-    
-
-
-    
->>>>>>> 9ea5eba117df96ca7a923c19304b09b989f9cb4f
 }
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+    
+
