@@ -1,0 +1,27 @@
+.questionbox {
+    position: relative;
+    z-index: 1;
+    background-color: var(--contrast-main2);
+    margin-top: 30rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--main-back)
+}
+
+
+.question {
+    position: absolute;
+    left: 63.5rem;
+    font-family: Helvetica;
+    color: white;
+    max-width: 32rem;
+    
+
+}
