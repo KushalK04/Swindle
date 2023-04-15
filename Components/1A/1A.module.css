@@ -1,5 +1,5 @@
 .logo {
-    width: 46%;
+    width: 37%;
 }
 
 .logoholder {
@@ -10,15 +10,15 @@
   
 .container {
     background-color: #598392;
-    padding: 1rem;
     border-radius: 20px;
-    width: 63%;
     padding: 3rem 1rem 3rem 1rem;
+    margin-bottom: 4%;
 }
 
 .h3 {
     color: #ffffff;
     text-align: center;
+    margin-top: 1%;
 }
 
 
@@ -27,11 +27,13 @@
     display: flex;
     flex-direction: column;
     gap: 7px;
-    width: 73%;
+    margin-bottom: 1%;
 }
 
 .contentContainer {
-    display: contents;
+    display: flex;
+    flex-direction: column;
+    width: 73%;
 }
 
 .button {
