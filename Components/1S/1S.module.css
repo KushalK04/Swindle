@@ -1,0 +1,45 @@
+.logo {
+    width: 37%;
+}
+
+.logoholder {
+    width: 100%;
+    margin-left: 9%;
+    margin-top: 7%;
+}
+  
+.container {
+    background-color: #598392;
+    border-radius: 20px;
+    padding: 3rem 1rem 3rem 1rem;
+    margin-bottom: 4%;
+    height: 83px;
+}
+
+.h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.buttoncontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 1%;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+    height: 517px;
+    justify-content: space-around;
+}
+
+.button {
+    background-color: #F06543;
+    color: #ffffff;
+    padding: 1rem 0rem 1rem 0rem;
+    border-radius: 15px;
+}
