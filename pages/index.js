@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import OneA from '@/Components/1A'
+import HomePage from '@/Components/HomePage'
 
 
 
@@ -16,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/Layer_1(3).svg" />
       </Head>
       <main className={styles.main}>
-        <OneA/>
+        <HomePage/>
       </main>
     </>
   )
