@@ -23,11 +23,11 @@ export default function OneA() {
                </div>
 
                <div className={styles.buttoncontainer}>
-                <button className={styles.button}>Vancouver</button>
-                <button className={styles.button}>Surrey</button>
-                <button className={styles.button}>Burnaby</button>
-                <button className={styles.button}>Richmond</button>
-                <button className={styles.button}>Coquitlam</button>
+                <button className={styles.button}><h4>Vancouver</h4></button>
+                <button className={styles.button}><h4>Surrey</h4></button>
+                <button className={styles.button}><h4>Burnaby</h4></button>
+                <button className={styles.button}><h4>Richmond</h4></button>
+                <button className={styles.button}><h4>Coquitlam</h4></button>
                 </div>
 
                </div>

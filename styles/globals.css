@@ -13,3 +13,25 @@ body {
 }
     
 
+@font-face {
+    font-family: 'Istok Web';
+    src: url('../public/fonts/IstokWeb-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cabin Regular';
+    src: url('../public/fonts/Cabin-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h3 {
+    font-family: 'Istok Web';
+
+}
+
+h4 {
+    font-family: 'Cabin Regular';
+}
