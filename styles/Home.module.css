@@ -7,11 +7,3 @@
   min-height: 100vh;
   background-color: var(--main-back)
 }
-
-.headin {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-}
-

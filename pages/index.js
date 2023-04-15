@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import OneA from '@/Components/1A'
 
 
 
@@ -15,11 +16,7 @@ export default function Home() {
         <link rel="icon" href="/Layer_1(3).svg" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.headin}>
-          <h1>Scam App</h1>
-          <h3>Informing you about scams!</h3>
-        </div>
-        <BottomNav/>
+        <OneA/>
       </main>
     </>
   )
