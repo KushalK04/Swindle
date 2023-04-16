@@ -1,12 +1,11 @@
 import Head from 'next/head'
 import styles from '@/styles/1B.module.css'
-import OneB from '@/Components/1B'
 import BottomNav from '@/Components/NavBarBottom'
 
 
 
 
-export default function OneB() {
+export default function OneBB() {
   return (
     <>
       <Head>
