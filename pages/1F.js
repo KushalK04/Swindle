@@ -4,7 +4,7 @@ import BottomNav from '@/Components/NavBarBottom'
 
 
 
-export default function One() {
+export default function OneF() {
   return (
     <>
       <Head>

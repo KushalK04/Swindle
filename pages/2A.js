@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/2A.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 
-export default function One() {
+export default function TwoA() {
   return (
     <>
       <Head>

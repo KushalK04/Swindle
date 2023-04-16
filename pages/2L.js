@@ -3,7 +3,7 @@ import styles from '@/styles/2L.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 
 
-export default function One() {
+export default function TwoL() {
   return (
     <>
       <Head>

@@ -4,7 +4,7 @@ import BottomNav from '@/Components/NavBarBottom'
 
 
 
-export default function TwoEE() {
+export default function TwoE() {
   return (
     <>
       <Head>

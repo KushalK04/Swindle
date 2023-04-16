@@ -3,7 +3,7 @@ import styles from '@/styles/1S.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 
 
-export default function One() {
+export default function OneS() {
   return (
     <>
       <Head>

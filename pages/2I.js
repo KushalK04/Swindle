@@ -3,7 +3,7 @@ import styles from '@/styles/2I.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 
 
-export default function One() {
+export default function TwoI() {
   return (
     <>
       <Head>

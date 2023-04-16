@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/1X.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 
-export default function One() {
+export default function OneX() {
   return (
     <>
       <Head>
