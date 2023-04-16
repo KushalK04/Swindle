@@ -29,10 +29,15 @@
     margin-bottom: 1%;
 }
 
+.center {
+    text-align: center;
+}
+
 .contentContainer {
     display: flex;
     flex-direction: column;
     width: 93%;
+    margin-top: 9%;
 }
 
 .button {
