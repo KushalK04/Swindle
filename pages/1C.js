@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/1C.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import Link from 'next/link'
 
 export default function OneC() {
   return (
@@ -22,8 +23,8 @@ export default function OneC() {
             <h3 className={styles.h3}>Have you provided any personal information?</h3>
           </div>
           <div className={styles.buttoncontainer}>
-            <button className={styles.button}><h4>Yes</h4></button>
-            <button className={styles.button}><h4>No</h4></button>
+            <Link href="/1H"><button className={styles.button}><h4>Yes</h4></button></Link>
+            <Link href="1I"><button className={styles.button}><h4>No</h4></button></Link>
           </div>
         </div>
         <BottomNav/>

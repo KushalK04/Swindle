@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/1H.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import Link from 'next/link'
 
 
 export default function OneH() {
@@ -27,11 +28,11 @@ export default function OneH() {
                </div>
 
                <div className={styles.buttoncontainer}>
-                <button className={styles.button}><h4>Banking</h4></button>
-                <button className={styles.button}><h4>Government</h4></button>
-                <button className={styles.button}><h4>Social Media</h4></button>
-                <button className={styles.button}><h4>Email</h4></button>
-                <button className={styles.button}><h4>Device</h4></button>
+                <Link href="1O"><button className={styles.button}><h4>Banking</h4></button></Link>
+                <Link href="1O"><button className={styles.button}><h4>Government</h4></button></Link>
+                <Link href="1O"><button className={styles.button}><h4>Social Media</h4></button></Link>
+                <Link href="1K"><button className={styles.button}><h4>Email</h4></button></Link>
+                <Link href="1K"><button className={styles.button}><h4>Device</h4></button></Link>
                 </div>
 
                </div>

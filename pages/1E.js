@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/1E.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import Link from 'next/link'
 
 export default function OneE() {
   return (
@@ -29,8 +30,8 @@ export default function OneE() {
                     </div>
                 </div>
                 <div className={styles.buttoncontainer}>
-                    <button className={styles.button}><h4>Run Test Again</h4></button>
-                    <button className={styles.button}><h4>Check What You Chose to as to Why You're Not Being Scammed</h4></button>
+                  <Link href="/"><button className={styles.button}><h4>Run Test Again</h4></button></Link>
+                  <Link href="/reiterationpage"><button className={styles.button}><h4>Check What You Chose to as to Why You're Not Being Scammed</h4></button></Link> 
                 </div>
                </div>
                <BottomNav/>

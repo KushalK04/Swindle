@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/1B.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import Link from 'next/link'
 
 
 
@@ -26,9 +27,9 @@ export default function OneBB() {
             <h3 className={styles.h3}>What type of scam are you trying to check?</h3>
           </div>
           <div className={styles.buttoncontainer}>
-            <button className={styles.button}><h4>Email</h4></button>
-            <button className={styles.button}><h4>Text</h4></button>
-            <button className={styles.button}><h4>Call</h4></button>
+            <Link href="/1C"><button className={styles.button}><h4>Email</h4></button></Link>
+            <Link href="/1V"><button className={styles.button}><h4>Text</h4></button></Link>
+            <Link href="/1R"><button className={styles.button}><h4>Call</h4></button></Link>
           </div>
         </div>
         <BottomNav/>
