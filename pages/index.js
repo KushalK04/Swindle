@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import HomePage from '@/Components/HomePage'
+import TwoF from './2F'
 
 
 
@@ -14,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/Layer_1(3).svg" />
       </Head>
       <main className={styles.main}>
-        <HomePage/>
+        <TwoF/>
       </main>
     </>
   )
