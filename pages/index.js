@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/Layer_1(3).svg" />
       </Head>
       <main className={styles.main}>
-        <TwoF/>
+        <HomePage/>
       </main>
     </>
   )
