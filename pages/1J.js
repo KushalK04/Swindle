@@ -31,7 +31,6 @@ export default function OneJ() {
                 <Link href="/1K"><button className={styles.button}><h4>Yes</h4></button></Link>
                 <Link href="/1M"><button className={styles.button}><h4>No</h4></button></Link>               
                 </div>
-
                </div>
                <BottomNav/>
       </main>
