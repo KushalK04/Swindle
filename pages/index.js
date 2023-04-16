@@ -1,8 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import BottomNav from '@/Components/NavBarBottom'
-import OneA from '@/Components/1A'
 import HomePage from '@/Components/HomePage'
 
 

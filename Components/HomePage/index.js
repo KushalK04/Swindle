@@ -1,5 +1,7 @@
+import Link from 'next/link'
 import styles from '../HomePage/HomePage.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import { useRouter } from 'next/router'
 
 export default function HomePage() {
 
@@ -21,8 +23,9 @@ export default function HomePage() {
                </div>
 
                <div className={styles.buttoncontainer}>
-                <button className={styles.button}><h4>Am I Being Scammed?</h4></button>
-                <button className={styles.button}><h4>Learn More About Scams</h4></button>
+                <Link href="/1B"><button className={styles.button}><h4>Am I Being Scammed?</h4></button></Link>
+                <Link href="/2E"><button className={styles.button}><h4>Learn More About Scams</h4></button></Link>
+                
                 </div>
 
                </div>
