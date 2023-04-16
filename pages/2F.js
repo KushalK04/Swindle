@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/2F.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import { useRouter } from 'next/router'
 
 export default function TwoF() {
   return (
