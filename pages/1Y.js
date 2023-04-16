@@ -3,6 +3,9 @@ import styles from '@/styles/1Y.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
 
+var yes = process.env.NEXT_PUBLIC_YES;
+var no = process.env.NEXT_PUBLIC_NO;
+
 export default function OneY() {
   return (
     <>
@@ -30,8 +33,8 @@ export default function OneY() {
                </div>
 
                <div className={styles.buttoncontainer}>
-                <Link href="/2B"><button className={styles.button}><h4>Yes</h4></button></Link>
-                <Link href="/1X"><button className={styles.button}><h4>No</h4></button></Link>
+                <Link href="/2B"><button className={styles.button}><h4>{yes}</h4></button></Link>
+                <Link href="/1X"><button className={styles.button}><h4>{no}</h4></button></Link>
                 
                 
                 </div>
