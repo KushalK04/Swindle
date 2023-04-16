@@ -28,9 +28,9 @@ export default function TwoE() {
                </div>
 
                <div className={styles.buttoncontainer}>
-                <button className={styles.button}><h4>General Facts</h4></button>
-                <button className={styles.button}><h4>Most Basic Scams</h4></button>
-                <button className={styles.button}><h4>What to do if scammed</h4></button>
+                <Link href="/2M"><button className={styles.button}><h4>General Facts</h4></button></Link>
+                <Link href="/2G"><button className={styles.button}><h4>Most Basic Scams</h4></button></Link>
+                <Link href="/2D"><button className={styles.button}><h4>What to do if scammed</h4></button></Link>
                 </div>
 
                </div>

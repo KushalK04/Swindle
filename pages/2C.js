@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/2C.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import Link from 'next/link'
 
 export default function TwoC() {
   return (
@@ -28,8 +29,8 @@ export default function TwoC() {
                </div>
 
                <div className={styles.buttoncontainer}>
-                <button className={styles.button}><h4>Yes</h4></button>
-                <button className={styles.button}><h4>No</h4></button>
+                <Link href="/1E"><button className={styles.button}><h4>Yes</h4></button></Link>
+                <Link href="/1F"><button className={styles.button}><h4>No</h4></button></Link>
                 </div>
 
                </div>
