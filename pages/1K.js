@@ -27,7 +27,7 @@ export default function OneK() {
                </div>
 
                <div className={styles.buttoncontainer}>
-                <Link><button className={styles.button}><h4>Yes</h4></button></Link>
+                <button className={styles.button}><h4>Yes</h4></button>
                 <Link href="/1F"><button className={styles.button}><h4>No</h4></button></Link> 
                </div>
 

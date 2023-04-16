@@ -28,7 +28,7 @@ export default function OneD() {
                     </div>
                 </div>
                 <div className={styles.buttoncontainer}>
-                    <button className={styles.button}><h4>Run Test Again</h4></button>
+                  <Link href="/"><button className={styles.button}><h4>Run Test Again</h4></button></Link>
                 </div>
                </div>
                <BottomNav/>
