@@ -3,6 +3,9 @@ import styles from '@/styles/1S.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
 
+var yes = process.env.NEXT_PUBLIC_YES;
+var no = process.env.NEXT_PUBLIC_NO;
+
 
 export default function OneS() {
   return (
@@ -28,8 +31,8 @@ export default function OneS() {
                </div>
 
                <div className={styles.buttoncontainer}>
-                <Link href="/1F"><button className={styles.button}><h4>Yes</h4></button></Link>
-                <Link href="/1T"><button className={styles.button}><h4>No</h4></button></Link>
+                <Link href="/1F"><button className={styles.button}><h4>{yes}</h4></button></Link>
+                <Link href="/1T"><button className={styles.button}><h4>{no}</h4></button></Link>
                 </div>
                 
 

@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/2F.module.css'
 import BottomNav from '@/Components/NavBarBottom'
-import { useRouter } from 'next/router'
 
 export default function TwoF() {
   return (
@@ -24,7 +23,6 @@ export default function TwoF() {
                <h1 className={styles.h3}>
                 Phone Call Scams
                </h1>
-               
                <div className={styles.container}>
                 <h3>
                 Someone might pretend to be the government, your bank, your employer, someone that you owe money to, or even an old friend. Scammers use phone calls, emails, or fake websites to trick you into sharing your personal information. These tricks are sometimes called “phishing”. <br></br> The scammers then use your information to apply for credit cards, bank loans, and other kinds of credit. They can take money from your bank accounts and shop with your credit cards. This is sometimes called “identity theft”. <br></br> If you receive telephone calls from collection agencies or creditors for accounts that you do not have or purchases that you didn't make, you might be a victim of identity theft. Also, your bank or other financial statements might show withdrawals, transactions, or transfers that you didn't make.
