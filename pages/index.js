@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import HomePage from '@/Components/HomePage'
-import TwoF from './2F'
+
 
 
 

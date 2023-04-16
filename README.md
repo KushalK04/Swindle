@@ -12,6 +12,8 @@ https://www.alberta.ca/common-text-scams.aspx
 https://ised-isde.canada.ca/site/office-consumer-affairs/en/identity-theft-spam-and-fraud/mail-fraud-and-spam
 https://www.nerdwallet.com/ca/personal-finance/newcomer-to-canada-watch-out-for-scams
 https://helpcenter.trendmicro.com/en-us/article/tmka-20565
+https://www.cleo.on.ca/en/publications/scams/what-are-some-common-telephone-and-internet-scams
+https://www.statista.com/chart/24593/most-common-types-of-cyber-crime/
 
 
 ## Packages/Dependencies - 

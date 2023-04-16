@@ -1,0 +1,59 @@
+.logo {
+    width: 37%;
+}
+
+.logoholder {
+    width: 100%;
+    margin-left: 9%;
+    margin-top: 7%;
+}
+  
+.container {
+    background-color: var(--contrast-main2);
+    border-radius: 20px;
+    padding: 3rem 1rem 3rem 1rem;
+    margin-bottom: 33%;
+    overflow: auto;
+    color: aliceblue;
+}
+
+.h3 {
+    color: var(--white);
+    text-align: center;
+    margin-top: 1%;
+}
+
+.buttoncontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 1%;
+}
+
+.center {
+    text-align: center;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    margin-top: 9%;
+}
+
+.button {
+    background-color: var(--accents);
+    color: var(--white);
+    padding: 1rem 0rem 1rem 0rem;
+    border-radius: 15px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--main-back)
+}
