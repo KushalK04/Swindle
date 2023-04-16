@@ -28,8 +28,8 @@ export default function OneL() {
                </div>
 
                <div className={styles.buttoncontainer}>
-                <Link><button className={styles.button}><h4>Yes</h4></button></Link>
-                <Link><button className={styles.button}><h4>No</h4></button></Link>                
+                <Link href="1E"><button className={styles.button}><h4>Yes</h4></button></Link>
+                <Link href="1F"><button className={styles.button}><h4>No</h4></button></Link>                
                 </div>
 
                </div>
