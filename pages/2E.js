@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/2E.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import Link from 'next/link'
 
 
 
