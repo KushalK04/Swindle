@@ -1,6 +1,6 @@
-.alert {
-    margin-left: -10%;
-    width: 25%;
+.check {
+    margin-left: 92%;
+    width: 20%;
 }
 
 .alertcont {
@@ -12,16 +12,6 @@
 
 .logo {
     width: 37%;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
-    min-height: 100vh;
-    background-color: var(--main-back)
 }
 
 .logoholder {
@@ -41,7 +31,7 @@
 .h3 {
     color: #ffffff;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 
 .buttoncontainer {
@@ -57,12 +47,35 @@
     width: 73%;
     height: 517px;
     justify-content: space-around;
+    margin-top: -74%;
+}
+
+.idk {
+    margin-top: -35%;
+}
+
+.mascot {
+    position: relative;
+    overflow: visible;
+    width: 36%;
+    top: -40px;
+    left: -40px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--main-back)
 }
 
 .button {
     background-color: #F06543;
     color: #ffffff;
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 1rem 1rem 1rem 1rem;
     border-radius: 15px;
     width: 100%;
 }

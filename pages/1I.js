@@ -15,25 +15,22 @@ export default function OneI() {
       </Head>
       <main className={styles.main}>
         <div className={styles.logoholder}>
-                   <div>
-                    <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
-                   </div>
-               </div>
-
-               <div className={styles.contentContainer}>
-               <div className={styles.container}>
-                <h3 className={styles.h3}>
-                    Is this message asking you to go to a link?
-                </h3>
-               </div>
-
-               <div className={styles.buttoncontainer}>
-                <Link href="/1L"><button className={styles.button}><h4>Yes</h4></button></Link>
-                <Link href="1J"><button className={styles.button}><h4>No</h4></button></Link>
-                </div>
-
-               </div>
-               <BottomNav/>
+          <div>
+            <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+          </div>
+        </div>
+        <div className={styles.contentContainer}>
+          <div className={styles.container}>
+            <h3 className={styles.h3}>
+              Is this message asking you to go to a link?
+            </h3>
+          </div>
+          <div className={styles.buttoncontainer}>
+            <Link href="/1L"><button className={styles.button}><h4>Yes</h4></button></Link>
+            <Link href="1J"><button className={styles.button}><h4>No</h4></button></Link>
+          </div>
+        </div>
+        <BottomNav/>
       </main>
     </>
   )

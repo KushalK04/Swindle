@@ -3,7 +3,7 @@ import styles from '@/styles/1D.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
 
-export default function OneD() {
+export default function OneE() {
   return (
     <>
       <Head>
@@ -13,8 +13,8 @@ export default function OneD() {
         <link rel="icon" href="/Layer_1(3).svg" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.logoholder}>
-                   <div>
+      <div className={styles.logoholder}>
+                   <div className={styles.idk}>
                     <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
                    </div>
                </div>
@@ -22,14 +22,17 @@ export default function OneD() {
                <div className={styles.contentContainer}>
                 <div className={styles.container}>
                     <div className={styles.alertcont}>
-                        <img src="/Alert.svg" className={styles.alert}/>
+                        <img src="/CheckMark.svg" className={styles.check}/>
                         <h3 className={styles.h3}>
-                            A suspicious group roaming around houses offering computer services have been reported as a scam in this area.
+                            Based on your answers, you are not getting scammed but you may still be at risk. Here are few suggestions: 
                         </h3>
+                        <img src="/Mascot.svg" className={styles.mascot}/>
                     </div>
                 </div>
                 <div className={styles.buttoncontainer}>
+                  <Link href="/2E"><button className={styles.button}><h4>View Our Resources to See If You Got Sscammed</h4></button></Link>
                   <Link href="/"><button className={styles.button}><h4>Run Test Again</h4></button></Link>
+                  <Link href="/reiterationpage"><button className={styles.button}><h4>Check What You Chose to as to Why We Are Not Sure</h4></button></Link> 
                 </div>
                </div>
                <BottomNav/>

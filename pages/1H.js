@@ -15,28 +15,26 @@ export default function OneH() {
       </Head>
       <main className={styles.main}>
         <div className={styles.logoholder}>
-                   <div>
-                    <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
-                   </div>
-               </div>
-
-               <div className={styles.contentContainer}>
-               <div className={styles.container}>
-                <h3 className={styles.h3}>
-                    What type of personal info was it asking for?
-                </h3>
-               </div>
-
-               <div className={styles.buttoncontainer}>
-                <Link href="1O"><button className={styles.button}><h4>Banking</h4></button></Link>
-                <Link href="1O"><button className={styles.button}><h4>Government</h4></button></Link>
-                <Link href="1O"><button className={styles.button}><h4>Social Media</h4></button></Link>
-                <Link href="1K"><button className={styles.button}><h4>Email</h4></button></Link>
-                <Link href="1K"><button className={styles.button}><h4>Device</h4></button></Link>
-                </div>
-
-               </div>
-               <BottomNav/>
+          <div>
+            <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+          </div>
+        </div>
+        
+        <div className={styles.contentContainer}>
+          <div className={styles.container}>
+            <h3 className={styles.h3}>
+              What type of personal info was it asking for?
+            </h3>
+          </div>
+          <div className={styles.buttoncontainer}>
+            <Link href="1O"><button className={styles.button}><h4>Banking</h4></button></Link>
+            <Link href="1O"><button className={styles.button}><h4>Government</h4></button></Link>
+            <Link href="1O"><button className={styles.button}><h4>Social Media</h4></button></Link>
+            <Link href="1K"><button className={styles.button}><h4>Email</h4></button></Link>
+            <Link href="1K"><button className={styles.button}><h4>Device</h4></button></Link>
+          </div> 
+        </div>
+        <BottomNav/>
       </main>
     </>
   )

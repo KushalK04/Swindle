@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/2M.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import BarChart from '@/Components/BarChart'
+import Link from 'next/link'
 
 export default function TwoM() {
   return (
@@ -27,6 +28,9 @@ export default function TwoM() {
                
                <div className={styles.container}>
                   <BarChart/>
+               </div>
+               <div className={styles.buttoncontainer}>
+                <Link href="/1F"><button className={styles.button}><h4>Next Fact</h4></button></Link>
                </div>
                </div>
                <BottomNav/>
