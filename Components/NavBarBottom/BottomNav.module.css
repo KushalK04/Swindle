@@ -4,7 +4,7 @@
   justify-content: space-between;
   background-color: var(--dark);
   position: fixed;
-  bottom: 39px;
+  bottom: 0;
 }
 
 .info {
