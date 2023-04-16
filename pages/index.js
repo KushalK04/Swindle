@@ -4,7 +4,6 @@ import styles from '@/styles/Home.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import OneA from '@/Components/1A'
 import HomePage from '@/Components/HomePage'
-import TwoD from '@/Components/2D'
 
 
 
@@ -18,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/Layer_1(3).svg" />
       </Head>
       <main className={styles.main}>
-        <TwoD/>
+        <HomePage/>
       </main>
     </>
   )
