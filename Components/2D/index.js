@@ -54,7 +54,7 @@ export default function TwoD() {
                 <h3>Contact the Canadian Anti-Fraud Centre toll free at 1-888-495-8501 or through the Fraud Reporting System. Depending on the type of fraud, or how it occurred, you'll also want to report it to other organizations.</h3>
 
                 <h2 className={styles.h3}>
-                    Report the incident
+                    Protect yourself from future fraud
                 </h2>
                 <h3>Scammers often target victims of fraud a second or third time with the promise of recovering money. Always do your due diligence and never send recovery money. Share any updates with the Canadian Anti-Fraud Centre, your financial institutions and police. Tell family, friends, neighbours and co-workers about your experience. You may prevent someone else from becoming a victim.</h3>
                </div>

@@ -9,7 +9,7 @@
 }
   
 .container {
-    background-color: #598392;
+    background-color: var(--contrast-main2);
     border-radius: 20px;
     padding: 3rem 1rem 3rem 1rem;
     margin-bottom: 4%;
@@ -17,7 +17,7 @@
 }
 
 .h3 {
-    color: #ffffff;
+    color: var(--white);
     text-align: center;
     margin-top: 1%;
 }
@@ -46,8 +46,8 @@
 }
 
 .button {
-    background-color: #F06543;
-    color: #ffffff;
+    background-color: var(--accents);
+    color: var(--white);
     padding: 1rem 0rem 1rem 0rem;
     border-radius: 15px;
 }
