@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from '../NavBarBottom/BottomNav.module.css'
 
 export default function BottomNav() {
@@ -5,17 +6,18 @@ export default function BottomNav() {
     return (
         <>
           <div className={styles.cont}>
-            <div>
-              
+            <Link href="/">
+             <div>
                 <img src="/icons/Restart Icon.svg" className={styles.res}/>
-              
-            </div>
+             </div>
+            </Link>
 
-            <div>
-              
-                <img src="/icons/Information Icon.svg" className={styles.info}/>
-              
-            </div>
+            <Link href="/2E">
+              <div>
+                  <img src="/icons/Information Icon.svg" className={styles.info}/>
+              </div>
+            </Link>
+            
 
             <div>
               

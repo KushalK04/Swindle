@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/1W.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import Link from 'next/link'
 
 
 export default function OneW() {
@@ -20,18 +21,14 @@ export default function OneW() {
                </div>
 
                <div className={styles.contentContainer}>
-
-               <h3 className={styles.h3}>
-                Where are you currently located?
-               </h3>
                <div className={styles.container}>
                 <h3 className={styles.h3}>
                 Is this message asking you to go to a link?</h3>
                </div>
 
                <div className={styles.buttoncontainer}>
-                <button className={styles.button}><h4>Yes</h4></button>
-                <button className={styles.button}><h4>No</h4></button>
+                <Link href="/1Z"><button className={styles.button}><h4>Yes</h4></button></Link>
+                <Link href="/1Y"><button className={styles.button}><h4>No</h4></button></Link>
                 </div>
 
                </div>

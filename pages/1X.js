@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/1X.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import Link from 'next/link'
 
 export default function OneX() {
   return (
@@ -20,17 +21,16 @@ export default function OneX() {
 
                <div className={styles.contentContainer}>
 
-               <h3 className={styles.h3}>
-                Where are you currently located?
-               </h3>
                <div className={styles.container}>
                 <h3 className={styles.h3}>
                 Is the message claiming to be from a service provider?</h3>
                </div>
 
                <div className={styles.buttoncontainer}>
-                <button className={styles.button}><h4>Yes</h4></button>
-                <button className={styles.button}><h4>No</h4></button>
+                <Link href="/2A"><button className={styles.button}><h4>Yes</h4></button></Link>
+                <Link href="/1E"><button className={styles.button}><h4>No</h4></button></Link>
+                
+                
                 </div>
 
                </div>

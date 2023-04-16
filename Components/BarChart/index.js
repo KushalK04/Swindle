@@ -50,7 +50,7 @@ export default function BarChart() {
                 title: {
                     display: true,
                     text: "Most Common Type of Cyber Scams",
-                    color: "#fff"
+                    color: "#ffffff"
                 }
             },
             maintainAspectRatio: false,
@@ -58,12 +58,12 @@ export default function BarChart() {
             scales: {
                 y: {
                     ticks: {
-                        color: "#fff"
+                        color: "#ffffff"
                     }
                 },
                 x: {
                     ticks: {
-                        color: "#fff"
+                        color: "#ffffff"
                     }
                 }
             }

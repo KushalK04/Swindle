@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/1Y.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import Link from 'next/link'
 
 export default function OneY() {
   return (
@@ -24,13 +25,15 @@ export default function OneY() {
                </h3>
                <div className={styles.container}>
                 <h3 className={styles.h3}>
-                Does the message seem to be reaching out to a person’s name that is not your name?
+                Does the message seem to be reaching out to a person's name that is not your name?
                 </h3>
                </div>
 
                <div className={styles.buttoncontainer}>
-                <button className={styles.button}><h4>Yes</h4></button>
-                <button className={styles.button}><h4>No</h4></button>
+                <Link href="/2B"><button className={styles.button}><h4>Yes</h4></button></Link>
+                <Link href="/1X"><button className={styles.button}><h4>No</h4></button></Link>
+                
+                
                 </div>
 
                </div>

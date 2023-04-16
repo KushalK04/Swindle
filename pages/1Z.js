@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/1Z.module.css'
 import BottomNav from '@/Components/NavBarBottom'
+import Link from 'next/link'
 
 export default function OneZ() {
   return (
@@ -29,9 +30,9 @@ export default function OneZ() {
                </div>
 
                <div className={styles.buttoncontainer}>
-                <button className={styles.button}><h4>Yes</h4></button>
-                <button className={styles.button}><h4>No</h4></button>
-                </div>
+                <Link href="/1E"><button className={styles.button}><h4>Yes</h4></button></Link>
+                <Link href="/1F"><button className={styles.button}><h4>No</h4></button></Link> 
+               </div>
 
                </div>
                <BottomNav/>
