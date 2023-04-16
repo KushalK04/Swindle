@@ -4,12 +4,6 @@ import styles from '@/styles/Home.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import OneA from '@/Components/1A'
 import HomePage from '@/Components/HomePage'
-import TwoF from '@/Components/2F'
-import TwoH from '@/Components/2H'
-import TwoI from '@/Components/2I'
-import TwoJ from '@/Components/2J'
-import TwoK from '@/Components/2K'
-import TwoG from '@/Components/2G'
 
 
 
@@ -23,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/Layer_1(3).svg" />
       </Head>
       <main className={styles.main}>
-        <TwoG/>
+        <HomePage/>
       </main>
     </>
   )
