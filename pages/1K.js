@@ -18,25 +18,22 @@ export default function OneK() {
       </Head>
       <main className={styles.main}>
         <div className={styles.logoholder}>
-                   <div>
-                    <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
-                   </div>
-               </div>
-
-               <div className={styles.contentContainer}>
-               <div className={styles.container}>
-                <h3 className={styles.h3}>
-                    Is this message from a person or an organization you have seen or used before?
-                </h3>
-               </div>
-
-               <div className={styles.buttoncontainer}>
-                <button className={styles.button}><h4>{yes}</h4></button>
-                <Link href="/1F"><button className={styles.button}><h4>{no}</h4></button></Link> 
-               </div>
-
-               </div>
-               <BottomNav/>
+          <div>
+            <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+          </div>
+        </div>
+        <div className={styles.contentContainer}>
+          <div className={styles.container}>
+            <h3 className={styles.h3}>
+              Is this message from a person or an organization you have seen or used before?
+            </h3>
+          </div>
+          <div className={styles.buttoncontainer}>
+            <Link href="/1O"><button className={styles.button}><h4>{yes}</h4></button></Link>
+            <Link href="/1F"><button className={styles.button}><h4>{no}</h4></button></Link> 
+          </div>
+        </div>
+          <BottomNav/>
       </main>
     </>
   )

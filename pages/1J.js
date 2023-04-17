@@ -16,27 +16,26 @@ export default function OneJ() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Layer_1(3).svg" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.logoholder}>
-                   <div>
-                    <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
-                   </div>
-               </div>
+        <main className={styles.main}>
+          <div className={styles.logoholder}>
+              <div>
+                <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+              </div>
+          </div>
 
-               <div className={styles.contentContainer}>
-               <div className={styles.container}>
-                <h3 className={styles.h3}>
-                    Are they asking for money?
-                </h3>
-               </div>
-
-               <div className={styles.buttoncontainer}>
-                <Link href="/1K"><button className={styles.button}><h4>{yes}</h4></button></Link>
-                <Link href="/1M"><button className={styles.button}><h4>{no}</h4></button></Link>               
+                <div className={styles.contentContainer}>
+                  <div className={styles.container}>
+                    <h3 className={styles.h3}>
+                      Are they asking for money?
+                    </h3>
+                  </div>
+                  <div className={styles.buttoncontainer}>
+                    <Link href="/1K"><button className={styles.button}><h4>{yes}</h4></button></Link>
+                    <Link href="/1M"><button className={styles.button}><h4>{no}</h4></button></Link>               
+                  </div>
                 </div>
-               </div>
-               <BottomNav/>
-      </main>
+                <BottomNav/>
+        </main>
     </>
   )
 }

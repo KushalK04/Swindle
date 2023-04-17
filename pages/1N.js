@@ -17,25 +17,22 @@ export default function OneN() {
       </Head>
       <main className={styles.main}>
         <div className={styles.logoholder}>
-                   <div>
-                    <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
-                   </div>
-               </div>
-
-               <div className={styles.contentContainer}>
-               <div className={styles.container}>
-                <h3 className={styles.h3}>
-                    Is the message saying that the device you are using has a virus and needs to run a scan?
-                </h3>
-               </div>
-
-               <div className={styles.buttoncontainer}>
-                <Link href="/1F"><button className={styles.button}><h4>{yes}</h4></button></Link>
-                <Link href="/1Q"><button className={styles.button}><h4>{no}</h4></button></Link>                
-              </div>
-
-               </div>
-               <BottomNav/>
+          <div>
+            <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+          </div>
+        </div>
+        <div className={styles.contentContainer}>
+          <div className={styles.container}>
+            <h3 className={styles.h3}>
+              Is the message saying that the device you are using has a virus and needs to run a scan?
+            </h3>
+          </div>
+          <div className={styles.buttoncontainer}>
+            <Link href="/1F"><button className={styles.button}><h4>{yes}</h4></button></Link>
+            <Link href="/1Q"><button className={styles.button}><h4>{no}</h4></button></Link>                
+          </div>
+        </div>
+        <BottomNav/>
       </main>
     </>
   )
