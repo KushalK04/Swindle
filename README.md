@@ -1,10 +1,11 @@
-## Group member names -
+## Group member names
 Kushal Kumar, Aldrin Esterda, Parker schwendeman
-## Description - 
+
+
+## Description 
 Big Group Project for Dynamic Content Design and Design 2
 
-## Resources - 
-
+## Resources 
 https://www.canada.ca/en/revenue-agency/campaigns/fraud-scams.html
 https://antifraudcentre-centreantifraude.ca/scams-fraudes/victim-victime-eng.htm
 https://loanscanada.ca/money/how-to-spot-and-avoid-e-transfer-scams/
@@ -16,5 +17,16 @@ https://www.cleo.on.ca/en/publications/scams/what-are-some-common-telephone-and-
 https://www.statista.com/chart/24593/most-common-types-of-cyber-crime/
 
 
-## Packages/Dependencies - 
-Javascript, Html, Css, Nextjs, Figma, Illustrator, Photoshop, npm run dev, git add., git commit -m "", git push 
+## Packages/Dependencies 
+- Javascript
+- Html
+- Css
+- Nextjs
+- Figma
+- Illustrator
+- Photoshop
+- npm run dev
+- git add.
+- git commit -m ""
+- git push
+- npm install react-chartjs-2 
