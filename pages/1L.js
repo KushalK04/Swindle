@@ -29,8 +29,8 @@ export default function OneL() {
               </h3>
             </div>
             <div className={styles.buttoncontainer}>
-              <Link href="1E"><button className={styles.button}><h4>{yes}</h4></button></Link>
-              <Link href="1F"><button className={styles.button}><h4>{no}</h4></button></Link>                
+              <Link href="/1E"><button className={styles.button}><h4>{yes}</h4></button></Link>
+              <Link href="/1F"><button className={styles.button}><h4>{no}</h4></button></Link>                
             </div>
           </div>
           <BottomNav/>

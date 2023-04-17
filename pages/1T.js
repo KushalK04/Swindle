@@ -29,8 +29,8 @@ export default function OneT() {
             </h3>
           </div>
           <div className={styles.buttoncontainer}>
-            <Link href="/1F"><button className={styles.button}><h4>{yes}</h4></button></Link>
-            <Link href="1U"><button className={styles.button}><h4>{no}</h4></button></Link>    
+            <Link href="/1D"><button className={styles.button}><h4>{yes}</h4></button></Link>
+            <Link href="/1U"><button className={styles.button}><h4>{no}</h4></button></Link>    
           </div>
         </div>
         <BottomNav/>

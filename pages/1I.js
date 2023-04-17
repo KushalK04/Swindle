@@ -30,7 +30,7 @@ export default function OneI() {
           </div>
           <div className={styles.buttoncontainer}>
             <Link href="/1L"><button className={styles.button}><h4>{yes}</h4></button></Link>
-            <Link href="1J"><button className={styles.button}><h4>{no}</h4></button></Link>
+            <Link href="/1J"><button className={styles.button}><h4>{no}</h4></button></Link>
           </div>
         </div>
         <BottomNav/>
