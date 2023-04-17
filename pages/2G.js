@@ -13,27 +13,24 @@ export default function TwoG() {
         <link rel="icon" href="/Layer_1(3).svg" />
       </Head>
       <main className={styles.main}>
-         <div className={styles.logoholder}>
-                   <div>
-                    <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
-                   </div>
-               </div>
-               
-               <div className={styles.contentContainer}>
-                <h3 className={styles.h3}>
-                    Types of Scams and Frauds.
-                </h3>
-               <div className={styles.buttoncontainer}>
-                <Link href="/2F"><button className={styles.button}><h4>Phone call scams</h4></button></Link>
-                <Link href="/2J"><button className={styles.pad}><h4>Prepaid cards, bitcoin, e-transfer payment scams</h4></button></Link>
-                <Link href="/2H"><button className={styles.button}><h4>Email scams</h4></button></Link>
-                <Link href="/2K"><button className={styles.button}><h4>Text messages/instant messaging scams</h4></button></Link>
-                <Link href="/2I"><button className={styles.button}><h4>Mail scams</h4></button></Link>
-                <Link href="/2L"><button className={styles.pad}><h4>Common scams aimed at newcomers to Canada</h4></button></Link>
-               </div>
-
-               </div>
-               <BottomNav/>
+        <div className={styles.logoholder}>
+          <div>
+            <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+          </div>
+        </div>
+              
+        <div className={styles.contentContainer}>
+          <h3 className={styles.h3}>Types of Scams and Frauds.</h3>
+          <div className={styles.buttoncontainer}>
+            <Link href="/2F"><button className={styles.button}><h4>Phone call scams</h4></button></Link>
+            <Link href="/2J"><button className={styles.pad}><h4>Prepaid cards, bitcoin, e-transfer payment scams</h4></button></Link>
+            <Link href="/2H"><button className={styles.button}><h4>Email scams</h4></button></Link>
+            <Link href="/2K"><button className={styles.button}><h4>Text messages/instant messaging scams</h4></button></Link>
+            <Link href="/2I"><button className={styles.button}><h4>Mail scams</h4></button></Link>
+            <Link href="/2L"><button className={styles.pad}><h4>Common scams aimed at newcomers to Canada</h4></button></Link>
+          </div>
+        </div>
+        <BottomNav/>
       </main>
     </>
   )

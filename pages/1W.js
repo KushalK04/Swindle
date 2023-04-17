@@ -17,24 +17,22 @@ export default function OneW() {
       </Head>
       <main className={styles.main}>
         <div className={styles.logoholder}>
-                   <div>
-                    <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
-                   </div>
-               </div>
+          <div>
+            <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+          </div>
+        </div>
 
-               <div className={styles.contentContainer}>
-               <div className={styles.container}>
-                <h3 className={styles.h3}>
-                Is this message asking you to go to a link?</h3>
-               </div>
-
-               <div className={styles.buttoncontainer}>
-                <Link href="/1Z"><button className={styles.button}><h4>{yes}</h4></button></Link>
-                <Link href="/1Y"><button className={styles.button}><h4>{no}</h4></button></Link>
-                </div>
-
-               </div>
-               <BottomNav/>
+        <div className={styles.contentContainer}>
+          <div className={styles.container}>
+            <h3 className={styles.h3}>Is this message asking you to go to a link?</h3>
+          </div>
+          <div className={styles.buttoncontainer}>
+            <Link href="/1Z"><button className={styles.button}><h4>{yes}</h4></button></Link>
+            <Link href="/1Y"><button className={styles.button}><h4>{no}</h4></button></Link>
+          </div>
+        </div>
+        <BottomNav/>
+        
       </main>
     </>
   )

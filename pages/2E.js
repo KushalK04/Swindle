@@ -16,26 +16,24 @@ export default function TwoE() {
       </Head>
       <main className={styles.main}>
         <div className={styles.logoholder}>
-                   <div>
-                    <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
-                   </div>
-               </div>
+          <div>
+            <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+          </div>
+        </div>
 
-               <div className={styles.contentContainer}>
-               <div className={styles.container}>
-                <h3 className={styles.h3}>
-                    Want to learn more about scams?
-                </h3>
-               </div>
+        <div className={styles.contentContainer}>
+          <div className={styles.container}>
+            <h3 className={styles.h3}>Want to learn more about scams?</h3>
+          </div>
 
-               <div className={styles.buttoncontainer}>
-                <Link href="/2M"><button className={styles.button}><h4>General Facts</h4></button></Link>
-                <Link href="/2G"><button className={styles.button}><h4>Most Basic Scams</h4></button></Link>
-                <Link href="/2D"><button className={styles.button}><h4>What to do if scammed</h4></button></Link>
-                </div>
+          <div className={styles.buttoncontainer}>
+            <Link href="/2M"><button className={styles.button}><h4>General Facts</h4></button></Link>
+            <Link href="/2G"><button className={styles.button}><h4>Most Basic Scams</h4></button></Link>
+            <Link href="/2D"><button className={styles.button}><h4>What to do if scammed</h4></button></Link>
+          </div>
 
-               </div>
-               <BottomNav/>
+        </div>
+        <BottomNav/>
       </main>
     </>
   )

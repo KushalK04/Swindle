@@ -13,21 +13,15 @@ export default function TwoD() {
       </Head>
       <main className={styles.main}>
         <div className={styles.logoholder}>
-                   <div>
-                    <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
-                   </div>
-               </div>
+            <div>
+                <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+            </div>
+        </div>
 
-               <div className={styles.contentContainer}>
-
-               <h1 className={styles.h3}>
-                What to do if scammed?
-               </h1>
-               <div className={styles.container}>
-                <h2 className={styles.h3}>
-                    Collect Your Thoughts
-                </h2>
-                
+        <div className={styles.contentContainer}>
+            <h1 className={styles.h3}>What to do if scammed?</h1>
+            <div className={styles.container}>
+                <h2 className={styles.h3}>Collect Your Thoughts</h2>
                 <h3>
                     Stay calm. Gather all information about the scam, including:
                     <ul>
@@ -36,7 +30,6 @@ export default function TwoD() {
                         <li>copies of emails and/or text messages</li>
                     </ul>
                 </h3>
-
                 <h2 className={styles.h3}>
                     Contact your financial institutions
                 </h2>
@@ -53,19 +46,22 @@ export default function TwoD() {
                 <h2 className={styles.h3}>
                     Contact the Police
                 </h2>
+                
                 <h3>Report the incident to your local police and get a file number for future reference. If you find suspicious activity on your credit report, update your file with the police.</h3>
 
                 <h2 className={styles.h3}>
                     Report the incident
                 </h2>
+                
                 <h3>Contact the Canadian Anti-Fraud Centre toll free at 1-888-495-8501 or through the Fraud Reporting System. Depending on the type of fraud, or how it occurred, you'll also want to report it to other organizations.</h3>
 
                 <h2 className={styles.h3}>
                     Protect yourself from future fraud
                 </h2>
+                
                 <h3>Scammers often target victims of fraud a second or third time with the promise of recovering money. Always do your due diligence and never send recovery money. Share any updates with the Canadian Anti-Fraud Centre, your financial institutions and police. Tell family, friends, neighbours and co-workers about your experience. You may prevent someone else from becoming a victim.</h3>
-               </div>
-               </div>
+            </div>
+        </div>
                <BottomNav/>
       </main>
     </>

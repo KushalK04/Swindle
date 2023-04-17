@@ -17,27 +17,22 @@ export default function TwoB() {
       </Head>
       <main className={styles.main}>
         <div className={styles.logoholder}>
-                   <div>
-                    <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
-                   </div>
-               </div>
+          <div>
+            <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+          </div>
+        </div>
 
-               <div className={styles.contentContainer}>
+        <div className={styles.contentContainer}>
+          <div className={styles.container}>
+            <h3 className={styles.h3}>Do they claim that they got the wrong number but still continue the conversation anyway?</h3>
+          </div>
 
-               <h3 className={styles.h3}>
-               </h3>
-               <div className={styles.container}>
-                <h3 className={styles.h3}>
-                Do they claim that they got the wrong number but still continue the conversation anyway?</h3>
-               </div>
-
-               <div className={styles.buttoncontainer}>
-                <Link href="/1F"><button className={styles.button}><h4>{yes}</h4></button></Link>
-                <Link href="/1E"><button className={styles.button}><h4>{no}</h4></button></Link>
-                </div>
-
-               </div>
-               <BottomNav/>
+          <div className={styles.buttoncontainer}>
+            <Link href="/1F"><button className={styles.button}><h4>{yes}</h4></button></Link>
+            <Link href="/1E"><button className={styles.button}><h4>{no}</h4></button></Link>
+          </div>
+        </div>
+        <BottomNav/>
       </main>
     </>
   )

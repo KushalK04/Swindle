@@ -15,25 +15,21 @@ export default function TwoM() {
       </Head>
       <main className={styles.main}>
         <div className={styles.logoholder}>
-                   <div>
-                    <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
-                   </div>
-               </div>
+          <div>
+            <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+          </div>
+        </div>
 
-               <div className={styles.contentContainer}>
-
-               <h1 className={styles.h3}>
-                 Amount of Victims to Type of Cyber Crimes
-               </h1>
-               
-               <div className={styles.container}>
-                  <BarChart/>
-               </div>
-               <div className={styles.buttoncontainer}>
-                <Link href="/1F"><button className={styles.button}><h4>Next Fact</h4></button></Link>
-               </div>
-               </div>
-               <BottomNav/>
+        <div className={styles.contentContainer}>
+          <h1 className={styles.h3}>Amount of Victims to Type of Cyber Crimes</h1>
+          <div className={styles.container}>
+            <BarChart/>
+          </div>
+          <div className={styles.buttoncontainer}>
+            <Link href="/"><button className={styles.button}><h4>Next Fact</h4></button></Link>
+          </div>
+        </div>
+        <BottomNav/>
       </main>
     </>
   )
