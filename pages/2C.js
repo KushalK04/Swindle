@@ -16,28 +16,23 @@ export default function TwoC() {
         <link rel="icon" href="/Layer_1(3).svg" />
       </Head>
       <main className={styles.main}>
+        
         <div className={styles.logoholder}>
-                   <div>
-                    <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
-                   </div>
-               </div>
+          <div>
+            <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+          </div>
+        </div>
 
-               <div className={styles.contentContainer}>
-
-               <h3 className={styles.h3}>
-               </h3>
-               <div className={styles.container}>
-                <h3 className={styles.h3}>
-                Does the sender of the message have no more than 6 digits?</h3>
-               </div>
-
-               <div className={styles.buttoncontainer}>
-                <Link href="/1E"><button className={styles.button}><h4>{yes}</h4></button></Link>
-                <Link href="/1F"><button className={styles.button}><h4>{no}</h4></button></Link>
-                </div>
-
-               </div>
-               <BottomNav/>
+        <div className={styles.contentContainer}>
+          <div className={styles.container}>
+            <h3 className={styles.h3}>Does the sender of the message have no more than 6 digits?</h3>
+          </div>
+          <div className={styles.buttoncontainer}>
+            <Link href="/1E"><button className={styles.button}><h4>{yes}</h4></button></Link>
+            <Link href="/1F"><button className={styles.button}><h4>{no}</h4></button></Link>
+          </div>
+        </div>
+        <BottomNav/>
       </main>
     </>
   )
