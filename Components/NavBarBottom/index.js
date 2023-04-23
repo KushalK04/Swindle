@@ -19,19 +19,17 @@ export default function BottomNav() {
              </div>
             </Link>
 
+            <div onClick={goBackAndRefresh}>
+              
+                <img src="/icons/About Us.svg" className={styles.ab}/>
+                
+            </div>
+
             <Link href="/2E">
               <div>
                   <img src="/icons/Information Icon.svg" className={styles.info}/>
               </div>
-            </Link>
-
-            
-              <div onClick={goBackAndRefresh}>
-              
-                <img src="/icons/About Us.svg" className={styles.ab}/>
-                
-              </div>
-            
+            </Link>      
           </div>
         </>
     )
