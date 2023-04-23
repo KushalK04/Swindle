@@ -3,7 +3,7 @@ Kushal Kumar, Aldrin Esterda, Parker schwendeman
 
 
 ## Description 
-Big Group Project for Dynamic Content Design and Design 2
+A web app that you can use to see if you have got scammed.
 
 ## Resources 
 https://www.canada.ca/en/revenue-agency/campaigns/fraud-scams.html
@@ -30,3 +30,4 @@ https://www.statista.com/chart/24593/most-common-types-of-cyber-crime/
 - git commit -m ""
 - git push
 - npm install react-chartjs-2 
+
