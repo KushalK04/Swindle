@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { UserSelectionsContext } from './data'
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Reiteration.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import HomePage from '@/Components/HomePage'
 
@@ -20,8 +20,8 @@ export default function Reiteration() {
         <link rel="icon" href="/Layer_1(3).svg" />
       </Head>
       <main className={styles.main}>
-        <div>
-      <h3>'What type of scam are you trying to check?'</h3>
+        <div className={styles.container}>
+      <h3 className={styles.h3}>'What type of scam are you trying to check?'</h3>
       <p>{selections['What type of scam are you trying to check?']}</p>
 
       <h3>Have you provided any personal information?</h3>
