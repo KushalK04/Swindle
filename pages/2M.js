@@ -26,7 +26,7 @@ export default function TwoM() {
             <BarChart/>
           </div>
           <div className={styles.buttoncontainer}>
-            <Link href="/"><button className={styles.button}><h4>Next Fact</h4></button></Link>
+            <Link href="/2N"><button className={styles.button}><h4>Next Fact</h4></button></Link>
           </div>
         </div>
         <BottomNav/>

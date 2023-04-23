@@ -26,7 +26,7 @@ export default function TwoP() {
             <AreaChart/>
           </div>
           <div className={styles.buttoncontainer}>
-            <Link href="/"><button className={styles.button}><h4>Next Fact</h4></button></Link>
+            <Link href="/2E"><button className={styles.button}><h4>End of Facts</h4></button></Link>
           </div>
         </div>
         <BottomNav/>
