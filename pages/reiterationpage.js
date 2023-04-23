@@ -137,10 +137,10 @@ export default function Reiteration() {
             </>
           )}
 
-          {selections['Is this message asking you to go to a link?'] && (
+          {selections['Is the message asking you to go to a link?'] && (
             <>
-              <h3 className={styles.h3}>Is this message asking you to go to a link?</h3>
-              <p className={styles.answer}>{selections['Is this message asking you to go to a link?']}</p>
+              <h3 className={styles.h3}>Is the message asking you to go to a link?</h3>
+              <p className={styles.answer}>{selections['Is the message asking you to go to a link?']}</p>
             </>
           )}
 
@@ -158,10 +158,10 @@ export default function Reiteration() {
             </>
           )}
 
-          {selections['Does the link look like it is from something familiar or legitimate?'] && (
+          {selections['Does this link look like it is from something familiar or legitimate?'] && (
             <>
-              <h3 className={styles.h3}>Does the link look like it is from something familiar or legitimate?</h3>
-              <p className={styles.answer}>{selections['Does the link look like it is from something familiar or legitimate?']}</p>
+              <h3 className={styles.h3}>Does this link look like it is from something familiar or legitimate?</h3>
+              <p className={styles.answer}>{selections['Does this link look like it is from something familiar or legitimate?']}</p>
             </>
           )}
 

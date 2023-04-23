@@ -23,8 +23,8 @@ export default function HomePage() {
                </div>
 
                <div className={styles.buttoncontainer}>
-                <Link href="/1B"><button className={styles.button}><h4>Am I Being Scammed?</h4></button></Link>
-                <Link href="/2E"><button className={styles.button}><h4>Learn More About Scams</h4></button></Link>
+                <Link href="/TypeOfScam"><button className={styles.button}><h4>Am I Being Scammed?</h4></button></Link>
+                <Link href="/LearnMore"><button className={styles.button}><h4>Learn More About Scams</h4></button></Link>
                 
                 </div>
 

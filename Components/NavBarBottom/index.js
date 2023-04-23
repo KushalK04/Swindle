@@ -25,7 +25,7 @@ export default function BottomNav() {
                 
             </div>
 
-            <Link href="/2E">
+            <Link href="/LearnMore">
               <div>
                   <img src="/icons/Information Icon.svg" className={styles.info}/>
               </div>
