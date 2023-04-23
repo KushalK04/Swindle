@@ -2,12 +2,26 @@ import Head from 'next/head'
 import styles from '@/styles/1O.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
+import { useContext } from 'react'
+import { UserSelectionsContext } from './data'
 
 var yes = process.env.NEXT_PUBLIC_YES;
 var no = process.env.NEXT_PUBLIC_NO;
 
 
 export default function OneO() {
+
+  const { updateSelections } = useContext(UserSelectionsContext)
+
+  const handleNoClick = () => {
+    updateSelections('Is the message from the official accounts of the organizations that are asking for your info?', 'No')
+  }
+
+  const handleYesClick = () => {
+    updateSelections('Is the message from the official accounts of the organizations that are asking for your info?', 'Yes')
+  }
+
+
   return (
     <>
       <Head>
@@ -29,8 +43,8 @@ export default function OneO() {
             </h3>
           </div>
           <div className={styles.buttoncontainer}>
-            <Link href="/1P"><button className={styles.button}><h4>{yes}</h4></button></Link>
-            <Link href="/1F"><button className={styles.button}><h4>{no}</h4></button></Link>                
+            <Link href="/1P"><button className={styles.button} onClick={handleYesClick}><h4>{yes}</h4></button></Link>
+            <Link href="/1F"><button className={styles.button} onClick={handleNoClick}><h4>{no}</h4></button></Link>                
           </div>
         </div>
         <BottomNav/>

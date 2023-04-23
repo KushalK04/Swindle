@@ -2,11 +2,26 @@ import Head from 'next/head'
 import styles from '@/styles/1U.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
+import { useContext } from 'react'
+import { UserSelectionsContext } from './data'
 
 var yes = process.env.NEXT_PUBLIC_YES;
 var no = process.env.NEXT_PUBLIC_NO;
 
 export default function OneU() {
+
+  const { updateSelections } = useContext(UserSelectionsContext)
+
+  const handleNoClick = () => {
+    updateSelections('Are they asking you to update your credit/debit card information about a package or order you are unfamiliar with?', 'No')
+  }
+
+  const handleYesClick = () => {
+    updateSelections('Are they asking you to update your credit/debit card information about a package or order you are unfamiliar with?', 'Yes')
+  }
+
+
+
   return (
     <>
       <Head>
@@ -34,8 +49,8 @@ export default function OneU() {
           </div>
           
           <div className={styles.buttoncontainer}>
-            <Link href="/1F"><button className={styles.button}><h4>{yes}</h4></button></Link>
-            <Link href="/1E"><button className={styles.button}><h4>{no}</h4></button></Link>
+            <Link href="/1F"><button className={styles.button} onClick={handleYesClick}><h4>{yes}</h4></button></Link>
+            <Link href="/1E"><button className={styles.button} onClick={handleNoClick}><h4>{no}</h4></button></Link>
           </div>
         
         </div>
