@@ -25,6 +25,10 @@ export default function TwoN() {
           <div className={styles.container}>
             <BarChart/>
           </div>
+          <div className={styles.description}>
+                <p>While law enforcement agencies and members of the Fraud Prevention Forum are committed to strategically collaborating and dedicating resources to preventing and combatting fraud, Canadian consumers and businesses also have a huge role to play to help stop fraudsters. Education and awareness are the strongest line of defence against scams and fraud.</p>
+                <p>If you or someone you know is a victim of a fraud, contact your local police service to report the crime and also report it to the Canadian Anti-Fraud Centre online or toll-free at 1-888-495-8501. If a financial loss did not occur, still report it to the Canadian Anti-Fraud Centre. If you have information about deceptive marketing practices, report it to the Competition Bureau. Your reports are essential to identify linkages, catch criminals, and prevent further victimization.</p>
+          </div>
           <div className={styles.buttoncontainer}>
             <Link href="/FactThree"><button className={styles.button}><h4>Next Fact</h4></button></Link>
           </div>

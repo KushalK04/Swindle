@@ -58,3 +58,8 @@
     min-height: 100vh;
     background-color: var(--main-back)
 }
+
+.description {
+    color: white;
+    font-family: 'Cabin Regular';
+}

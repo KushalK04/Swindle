@@ -25,6 +25,7 @@ export default function TwoO() {
           <div className={styles.container}>
             <BarChart/>
           </div>
+          <p className={styles.description}>In 2022, the Canadian Anti-Fraud Centre received fraud and cybercrime reports totalling a staggering $530 million in victim losses. Nearly a 40% increase from the unprecedented $380 million in losses in 2021</p>
           <div className={styles.buttoncontainer}>
             <Link href="/FactFour"><button className={styles.button}><h4>Next Fact</h4></button></Link>
           </div>
