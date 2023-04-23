@@ -2,11 +2,26 @@ import Head from 'next/head'
 import styles from '@/styles/2B.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
+import { useContext } from 'react'
+import { UserSelectionsContext } from './data'
 
 var yes = process.env.NEXT_PUBLIC_YES;
 var no = process.env.NEXT_PUBLIC_NO;
 
 export default function TwoB() {
+
+  const { updateSelections } = useContext(UserSelectionsContext)
+
+  const handleNoClick = () => {
+    updateSelections('Do they claim that they got the wrong number but still continue the conversation anyway?', 'No')
+  }
+
+  const handleYesClick = () => {
+    updateSelections('Do they claim that they got the wrong number but still continue the conversation anyway?', 'Yes')
+  }
+
+
+
   return (
     <>
       <Head>
@@ -28,8 +43,8 @@ export default function TwoB() {
           </div>
 
           <div className={styles.buttoncontainer}>
-            <Link href="/1D"><button className={styles.button}><h4>{yes}</h4></button></Link>
-            <Link href="/1E"><button className={styles.button}><h4>{no}</h4></button></Link>
+            <Link href="/1D"><button className={styles.button} onClick={handleYesClick}><h4>{yes}</h4></button></Link>
+            <Link href="/1E"><button className={styles.button} onClick={handleNoClick}><h4>{no}</h4></button></Link>
           </div>
         </div>
         <BottomNav/>

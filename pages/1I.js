@@ -2,12 +2,25 @@ import Head from 'next/head'
 import styles from '@/styles/1I.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
+import { useContext } from 'react'
+import { UserSelectionsContext } from './data'
 
 var yes = process.env.NEXT_PUBLIC_YES;
 var no = process.env.NEXT_PUBLIC_NO;
 
 
 export default function OneI() {
+
+  const { updateSelections } = useContext(UserSelectionsContext)
+
+  const handleYesClick = () => {
+    updateSelections('Is this message asking you to go to a link?', 'Yes')
+  }
+
+  const handleNoClick = () => {
+    updateSelections('Is this message asking you to go to a link?', 'No')
+  }
+
   return (
     <>
       <Head>
@@ -29,8 +42,8 @@ export default function OneI() {
             </h3>
           </div>
           <div className={styles.buttoncontainer}>
-            <Link href="/1L"><button className={styles.button}><h4>{yes}</h4></button></Link>
-            <Link href="/1J"><button className={styles.button}><h4>{no}</h4></button></Link>
+            <Link href="/1L"><button className={styles.button} onClick={handleYesClick}><h4>{yes}</h4></button></Link>
+            <Link href="/1J"><button className={styles.button} onClick={handleNoClick}><h4>{no}</h4></button></Link>
           </div>
         </div>
         <BottomNav/>

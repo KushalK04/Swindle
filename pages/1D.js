@@ -4,6 +4,7 @@ import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
 
 export default function OneE() {
+
   return (
     <>
       <Head>

@@ -2,9 +2,35 @@ import Head from 'next/head'
 import styles from '@/styles/1H.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
-
+import { useContext } from 'react'
+import { UserSelectionsContext } from './data'
 
 export default function OneH() {
+
+  const { updateSelections } = useContext(UserSelectionsContext)
+
+  const handleBankingClick = () => {
+    updateSelections('What type of personal info was it asking for?', 'Banking')
+  }
+
+  const handleGovernmentClick = () => {
+    updateSelections('What type of personal info was it asking for?', 'Government')
+  }
+
+  const handleSocialMediaClick = () => {
+    updateSelections('What type of personal info was it asking for?', 'Social Media')
+  }
+
+  const handleEmailClick = () => {
+    updateSelections('What type of personal info was it asking for?', 'Email')
+  }
+
+  const handleDeviceClick = () => {
+    updateSelections('What type of personal info was it asking for?', 'Device')
+  }
+
+
+
   return (
     <>
       <Head>
@@ -27,11 +53,11 @@ export default function OneH() {
             </h3>
           </div>
           <div className={styles.buttoncontainer}>
-            <Link href="1O"><button className={styles.button}><h4>Banking</h4></button></Link>
-            <Link href="1O"><button className={styles.button}><h4>Government</h4></button></Link>
-            <Link href="1O"><button className={styles.button}><h4>Social Media</h4></button></Link>
-            <Link href="1K"><button className={styles.button}><h4>Email</h4></button></Link>
-            <Link href="1K"><button className={styles.button}><h4>Device</h4></button></Link>
+            <Link href="1O"><button className={styles.button} onClick={handleBankingClick}><h4>Banking</h4></button></Link>
+            <Link href="1O"><button className={styles.button} onClick={handleGovernmentClick}><h4>Government</h4></button></Link>
+            <Link href="1O"><button className={styles.button} onClick={handleSocialMediaClick}><h4>Social Media</h4></button></Link>
+            <Link href="1K"><button className={styles.button} onClick={handleEmailClick}><h4>Email</h4></button></Link>
+            <Link href="1K"><button className={styles.button} onClick={handleDeviceClick}><h4>Device</h4></button></Link>
           </div> 
         </div>
         <BottomNav/>

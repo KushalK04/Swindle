@@ -2,11 +2,26 @@ import Head from 'next/head'
 import styles from '@/styles/1Y.module.css'
 import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
+import { useContext } from 'react'
+import { UserSelectionsContext } from './data'
 
 var yes = process.env.NEXT_PUBLIC_YES;
 var no = process.env.NEXT_PUBLIC_NO;
 
 export default function OneY() {
+
+  const { updateSelections } = useContext(UserSelectionsContext)
+
+  const handleNoClick = () => {
+    updateSelections('Does the message seem to be reaching out to a persons name that is not your name?', 'No')
+  }
+
+  const handleYesClick = () => {
+    updateSelections('Does the message seem to be reaching out to a persons name that is not your name?', 'Yes')
+  }
+
+
+
   return (
     <>
       <Head>
@@ -27,8 +42,8 @@ export default function OneY() {
             <h3 className={styles.h3}>Does the message seem to be reaching out to a person's name that is not your name?</h3>
           </div>
           <div className={styles.buttoncontainer}>
-            <Link href="/2B"><button className={styles.button}><h4>{yes}</h4></button></Link>
-            <Link href="/1X"><button className={styles.button}><h4>{no}</h4></button></Link>                
+            <Link href="/2B"><button className={styles.button} onClick={handleYesClick}><h4>{yes}</h4></button></Link>
+            <Link href="/1X"><button className={styles.button} onClick={handleNoClick}><h4>{no}</h4></button></Link>                
           </div>
         </div>
         <BottomNav/>
