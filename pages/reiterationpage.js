@@ -190,9 +190,8 @@ export default function Reiteration() {
           {!Object.keys(selections).length && (
             <HomePage message="You haven't answered any questions yet. Please take the quiz first." />
           )}
-
-          <BottomNav />
         </div>
+        <BottomNav />
       </main>
     </>
   )
