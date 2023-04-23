@@ -6,11 +6,14 @@ export default function BottomNav() {
     return (
         <>
           <div className={styles.cont}>
-            <Link href="/">
+            <Link href="javascript:history.back()">
              <div>
                 <img src="/icons/Restart Icon.svg" className={styles.res}/>
              </div>
             </Link>
+
+            
+            
 
             <Link href="/2E">
               <div>
