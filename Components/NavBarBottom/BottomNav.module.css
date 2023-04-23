@@ -1,7 +1,7 @@
 .cont {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: var(--dark);
   position: fixed;
   bottom: 0;

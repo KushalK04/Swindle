@@ -11,10 +11,7 @@ export default function BottomNav() {
                 <img src="/icons/Restart Icon.svg" className={styles.res}/>
              </div>
             </Link>
-
             
-            
-
             <Link href="/2E">
               <div>
                   <img src="/icons/Information Icon.svg" className={styles.info}/>
