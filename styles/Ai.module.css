@@ -1,0 +1,90 @@
+.textArea {
+    width: 100%;
+    text-align: center;
+    color: var(--dark);
+    border-radius: 15px;   
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+
+
+.botMessage {
+    text-align: left;
+    background-color: var(--main-back);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+  
+.userMessage {
+    text-align: right;
+    background-color: var(--dark);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px; 
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 4%;
+}
+  
+
+.Container {
+    background-color: var(--contrast-main2);
+    border-radius: 20px;
+    padding: 3rem 1rem 3rem 1rem;
+    overflow: auto;
+    color: aliceblue;
+    width: 77%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-y: scroll;
+}
+
+.scrollbar {
+    
+    overflow-y: scroll;
+
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+  
+  .scrollbar::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #000000;
+  }
+
+.h3 {
+    color: var(--white);
+    text-align: center;
+    margin-top: -14%;
+}
+
+.button {
+    background-color: var(--accents);
+    color: var(--white);
+    padding: 1rem 0rem 1rem 0rem;
+    border-radius: 15px;
+    width: 102%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--main-back)
+}
