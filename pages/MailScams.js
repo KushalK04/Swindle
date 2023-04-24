@@ -21,7 +21,7 @@ export default function TwoI() {
 
         <div className={styles.contentContainer}>
           <h1 className={styles.h3}>Mail Scams</h1>
-          <div className={styles.container}>
+          <div className={styles.scrollbar}>
             <h3>
               Receiving unsolicited mail is not only bothersome, but might also put your personal or financial information at risk. Take the steps to protect yourself against postal mail fraud. Learn how to lower the amount of addressed marketing offers you receive in your mailbox. Some individuals or organizations try to reach would-be victims by mail. According to the Canadian Anti-Fraud Centre, the three most common types of mail fraud are:
               <ul className={styles.list}>

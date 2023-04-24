@@ -20,7 +20,7 @@ export default function TwoH() {
 
         <div className={styles.contentContainer}>
           <h1 className={styles.h3}>Email Scams</h1>
-          <div className={styles.container}>
+          <div className={styles.scrollbar}>
             <h3>Email Scams are malicious emails that aim to trick recipients into giving up their sensitive information, such as bank accounts and passwords. This is one of the ways scammers use to get easy money from you.</h3>
             <h2 className={styles.h3}>Wondering why you receive these emails?</h2>
             <h3>Cybercriminals may have obtained your email address from a data leak, subscription to fake websites, public sources like social media, or illegal purchase of user data.</h3>
