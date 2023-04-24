@@ -17,7 +17,7 @@ export default function Reiteration() {
         <link rel="icon" href="/Layer_1(3).svg" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.container}>
+        <div className={styles.scrollbar}>
           {selections['What type of scam are you trying to check?'] && (
             <>
               <h3 className={styles.h3}>What type of scam are you trying to check?</h3>
