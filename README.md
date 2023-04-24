@@ -30,4 +30,6 @@ https://www.statista.com/chart/24593/most-common-types-of-cyber-crime/
 - git commit -m ""
 - git push
 - npm install react-chartjs-2 
+- dotenv
+- axios
 
