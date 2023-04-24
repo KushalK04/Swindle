@@ -7,6 +7,8 @@ import BottomNav from "@/Components/NavBarBottom";
 
 export default function ChatBot() {
 
+  
+
   const [botResponse, setBotResponse] = useState("");
   const [inputValue, setInputValue] = useState("");
   const [chatLog, setChatLog] = useState([]);
@@ -16,7 +18,7 @@ export default function ChatBot() {
     const url = "https://api.openai.com/v1/chat/completions";
     const headers = {
       "Content-type": "application/json",
-      Authorization: `Bearer ${process.env.API_KEY}`,
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
     };
     const data = {
       model: "gpt-3.5-turbo-0301",
@@ -103,4 +105,7 @@ export default function ChatBot() {
     </>
   );
 }
+
+console.log(process.env.API_KEY);
+
 

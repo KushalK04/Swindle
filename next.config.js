@@ -1,5 +1,4 @@
-const dotenv = require('dotenv')
-dotenv.config()
+require('dotenv').config();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
