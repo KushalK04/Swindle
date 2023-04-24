@@ -21,7 +21,7 @@ export default function BottomNav() {
 
             <div onClick={goBackAndRefresh}>
               
-                <img src="/icons/About Us.svg" className={styles.ab}/>
+                <img src="/icons/Home.svg" className={styles.home}/>
                 
             </div>
 
