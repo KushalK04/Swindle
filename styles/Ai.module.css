@@ -1,7 +1,7 @@
 .textArea {
     width: 100%;
     text-align: center;
-    color: var(--white);
+    color: var(--dark);
     border-radius: 15px;   
     padding: 1rem 0rem 0rem 0rem;
 }
@@ -39,7 +39,7 @@
     overflow: auto;
     color: aliceblue;
     width: 77%;
-    height: 557px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: end;
