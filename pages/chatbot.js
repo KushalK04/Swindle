@@ -16,7 +16,7 @@ export default function ChatBot() {
     const url = "https://api.openai.com/v1/chat/completions";
     const headers = {
       "Content-type": "application/json",
-      Authorization: `Bearer ${"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"}`,
+      Authorization: `Bearer ${"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"}`,
     };
     const data = {
       model: "gpt-3.5-turbo-0301",
