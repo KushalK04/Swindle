@@ -19,11 +19,18 @@ export default function ChatBot() {
       "Content-type": "application/json",
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
     };
+    const keywords = ["scam", "fraud", "phishing"]; 
+
+    if (!keywords.some(keyword => message.toLowerCase().includes(keyword))) {
+      setBotResponse("I'm sorry, I can only answer questions related to scams.");
+      return;
+    }
+  
     const data = {
       model: "gpt-3.5-turbo-0301",
       messages: [{ role: "user", content: message }],
     };
-
+  
     setIsLoading(true);
     axios
       .post(url, data, { headers: headers })
@@ -37,6 +44,7 @@ export default function ChatBot() {
         console.log(error);
       });
   };
+  
 
   
   const handleSubmit = (event) => {
