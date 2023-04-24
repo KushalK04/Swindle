@@ -20,7 +20,7 @@ export default function TwoD() {
 
         <div className={styles.contentContainer}>
             <h1 className={styles.h3}>What to do if scammed?</h1>
-            <div className={styles.container}>
+            <div className={styles.scrollbar}>
                 <h2 className={styles.h3}>Collect Your Thoughts</h2>
                 <h3>
                     Stay calm. Gather all information about the scam, including:
