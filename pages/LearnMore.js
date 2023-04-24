@@ -30,6 +30,7 @@ export default function TwoE() {
             <Link href="/FactOne"><button className={styles.button}><h4>General Facts</h4></button></Link>
             <Link href="/TypesOfScams"><button className={styles.button}><h4>Most Basic Scams</h4></button></Link>
             <Link href="/WhatToDo"><button className={styles.button}><h4>What to do if scammed</h4></button></Link>
+            <Link href="/chatbot"><button className={styles.button}><h4>Ask Our Ai!</h4></button></Link>
           </div>
 
         </div>

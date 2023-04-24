@@ -25,7 +25,6 @@ export default function HomePage() {
                <div className={styles.buttoncontainer}>
                 <Link href="/TypeOfScam"><button className={styles.button}><h4>Am I Being Scammed?</h4></button></Link>
                 <Link href="/LearnMore"><button className={styles.button}><h4>Learn More About Scams</h4></button></Link>
-                <Link href="/chatbot"><button className={styles.button}><h4>Ask Our Ai!</h4></button></Link>
                 
                 </div>
 
