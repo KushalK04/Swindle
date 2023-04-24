@@ -41,10 +41,12 @@ export default function BarChart() {
             plugins: {
                 legend: {
                     position: 'right',
+                
                 },
                 title: {
                     display: true,
-                    text: 'Impact of Fraud So Far This Year'
+                    text: 'Impact of Fraud So Far This Year',
+                    color: 'white'
                 },
             },
         })
@@ -54,6 +56,7 @@ export default function BarChart() {
             datasets: [
                 {
                     label: 'In 2022',
+                    color: 'white',
                     data: [92078, 57578],
                     borderColor: 'rgb(255, 99, 132)',
                     backgroundColor: 'rgba(255, 99, 132, 0.5)',
