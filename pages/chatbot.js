@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import axios from "axios";
 import styles from '../styles/Ai.module.css'
 import BottomNav from "@/Components/NavBarBottom";
@@ -74,7 +73,7 @@ export default function ChatBot() {
 
       <main className={styles.main}>
         <div className={styles.Container}>
-          <div className={styles.messagesContainer}>
+          <div className={styles.scrollbar}>
           {chatLog.map((message, index) => (
             <div
               key={index}
@@ -105,7 +104,5 @@ export default function ChatBot() {
     </>
   );
 }
-
-console.log(process.env.API_KEY);
 
 
