@@ -19,7 +19,7 @@ export default function ChatBot() {
       "Content-type": "application/json",
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
     };
-    const keywords = ["scam", "fraud", "phishing"]; 
+    const keywords = ["scam", "fraud", "phishing", "blackmail", "deceit", "deception", "extortion", "hoax", "racket", "rip-off"]; 
 
     if (!keywords.some(keyword => message.toLowerCase().includes(keyword))) {
       setBotResponse("I'm sorry, I can only answer questions related to scams.");
