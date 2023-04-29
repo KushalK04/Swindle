@@ -125,19 +125,19 @@ export default function Quiz() {
         <div className={styles.scrollbar}>
           <p>Your score: {score}/{questions.length}</p>
           <h3>Review your answers:</h3>
-          <ul>
+          <div>
             {questions.map((question, index) => (
-              <div key={index}>
+              <div key={index} className={styles.cont}>
                 <p>{question.question}</p>
-                <p>Your answer: {answers[index]}</p>
+                <p className={styles.youranswer}>Your answer: {answers[index]}</p>
                 {answers[index] === question.answer ? (
-                  <p>Correct!</p>
+                  <p className={styles.correct}>Correct!</p>
                 ) : (
-                  <p>Incorrect. The correct answer is: {question.answer}</p>
+                  <p className={styles.incorrect}>Incorrect. The correct answer is: {question.answer}</p>
                 )}
               </div>
             ))}
-          </ul>
+          </div>
         </div>
         <BottomNav />
       </main>

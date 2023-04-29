@@ -33,6 +33,26 @@
     background-color: #000000;
   }
 
+  .cont {
+    background-color: var(--main-back);
+    padding: 1rem;
+    border-radius: 29px;
+    margin-top: 3%;
+    margin-left: 1%;
+  }
+
+  .incorrect {
+    color: var(--accents);
+  }
+
+  .correct {
+    color: var(--green);
+  }
+
+  .youranswer {
+    color: var(--green);
+  }
+
 .h3 {
     color: var(--white);
     text-align: center;
