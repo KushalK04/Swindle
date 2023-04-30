@@ -1,6 +1,6 @@
 .cont {
   display: flex;
-  width: 100%;
+  width: 100.2%;
   justify-content: space-around;
   background-color: var(--dark);
   position: fixed;

@@ -5,7 +5,7 @@
 .logoholder {
     width: 100%;
     margin-left: 9%;
-    margin-top: -27%;
+    margin-top: -53%;
 }
   
 .container {
@@ -35,7 +35,7 @@
     width: 73%;
     height: 517px;
     justify-content: space-around;
-    margin-top: -38%;
+    margin-top: -80%;
 }
 
 .button {
@@ -51,7 +51,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 0;
+    padding: 1rem 1.1rem 0rem 1rem;
     min-height: 100vh;
     background-color: var(--main-back)
 }
