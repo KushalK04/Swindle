@@ -33,7 +33,7 @@ export default function OneE() {
                 <div className={styles.buttoncontainer}>
                   <Link href="/LearnMore"><button className={styles.button}><h4>View Our Resources to See If You Got Scammed</h4></button></Link>
                   <Link href="/"><button className={styles.button}><h4>Run Test Again</h4></button></Link>
-                  <Link href="/reiterationpage"><button className={styles.button}><h4>Check What You Chose to as to Why We Are Not Sure</h4></button></Link> 
+                  <Link href="/reiterationpage"><button className={styles.button}><h4>Review Your Answers</h4></button></Link> 
                 </div>
                </div>
                <BottomNav/>

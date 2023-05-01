@@ -124,7 +124,7 @@ export default function Quiz() {
       <main className={styles.main}>
         <div className={styles.scrollbar}>
           <p>Your score: {score}/{questions.length}</p>
-          <h3>Review your answers:</h3>
+          <h2>Review your answers:</h2>
           <div>
             {questions.map((question, index) => (
               <div key={index} className={styles.cont}>

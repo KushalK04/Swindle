@@ -73,3 +73,14 @@
     min-height: 100vh;
     background-color: var(--main-back)
 }
+
+.contentContainer2 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    color: white;
+    background-color: var(--main-back);
+    border-radius: 18px;
+    padding: 1rem 1rem 1rem 0.5rem;
+    margin-top: 6%;
+}

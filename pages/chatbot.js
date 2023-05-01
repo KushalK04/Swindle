@@ -80,6 +80,17 @@ export default function ChatBot() {
       </Head>
 
       <main className={styles.main}>
+
+        <div className={styles.logoholder}>
+          <div>
+            <img src="/LogoHorizontalWhite.svg" className={styles.logo}/>
+          </div>
+        </div>
+
+        <div className={styles.robotholder}>
+          <img src="/Asset_11.svg" className={styles.robot}/>
+        </div>
+        
         <div className={styles.Container}>
           <div className={styles.scrollbar}>
           {chatLog.map((message, index) => (

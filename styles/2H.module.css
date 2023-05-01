@@ -73,3 +73,26 @@
     min-height: 100vh;
     background-color: var(--main-back)
 }
+
+.contentContainer2 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 9%;
+    background-color: var(--main-back);
+    border-radius: 18px;
+    padding: 1rem 1rem 1rem 1rem
+}
+
+
+.contentContainer3 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 9%;
+    background-color: var(--main-back);
+    border-radius: 18px;
+    padding: 1rem 1rem 1rem 1rem
+}

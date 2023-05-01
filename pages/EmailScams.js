@@ -27,25 +27,30 @@ export default function TwoH() {
             <h2 className={styles.h3}>How to spot an email scam?</h2>
             <h3>
               Here are some ways to recognize a malicious email:
-              <ul className={styles.list}>
-                <li>It came from an infrequent sender.</li>
-                <li>It has an urgent call to action or an alarming tone.</li>
-                <li>It has unexpected attachments and suspicious links.</li>
-                <li>There are multiple spelling errors and bad grammar in the message.</li>
-                <li>The email address or domain name is misspelt or altered</li>
-                <li>Email greeting is not personalized or uses a generic format like "Dear madam or sir".</li>
-              </ul>
+              <div className={styles.contentContainer2}>
+                <ul className={styles.list}>
+                  <li>It came from an infrequent sender.</li>
+                  <li>It has an urgent call to action or an alarming tone.</li>
+                  <li>It has unexpected attachments and suspicious links.</li>
+                  <li>There are multiple spelling errors and bad grammar in the message.</li>
+                  <li>The email address or domain name is misspelt or altered</li>
+                  <li>Email greeting is not personalized or uses a generic format like "Dear madam or sir".</li>
+                </ul>
+              </div>
+
             </h3>
             <h3>
               Additionally, here are the most common types of scam emails circulating today:
-              <ul className={styles.list}>
-                <li>Sextortion or doxing</li>
-                <li>Business email imposters</li>
-                <li>Fake contest or raffle prizes</li>
-                <li>Account update and password reset requests</li>
-                <li>Fake charity membership from famous personalities</li>
-                <li>Too good to be true subscription promos and renewal discounts</li>
-              </ul>
+              <div className={styles.contentContainer3}>
+                <ul className={styles.list}>
+                  <li>Sextortion or doxing</li>
+                  <li>Business email imposters</li>
+                  <li>Fake contest or raffle prizes</li>
+                  <li>Account update and password reset requests</li>
+                  <li>Fake charity membership from famous personalities</li>
+                  <li>Too good to be true subscription promos and renewal discounts</li>
+                </ul>
+              </div>
             </h3>
           </div>
         </div>

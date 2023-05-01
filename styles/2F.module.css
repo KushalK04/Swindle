@@ -17,7 +17,7 @@
     padding: 3rem 1rem 3rem 1rem;
     margin-bottom: 29%;
     overflow: auto;
-    height: 500px;    
+    height: 450px;    
     overflow-y: scroll;
 
 }
@@ -75,4 +75,15 @@
     padding: 1rem 1.1rem 0rem 1rem;
     min-height: 100vh;
     background-color: var(--main-back)
+}
+
+.highlight {
+    color: #F06543;
+}
+
+.contentContainer2 {
+    border-radius: 18px;
+    color: white;
+    background-color: var(--main-back);
+    padding: 1rem 1rem 1rem 1rem;
 }
