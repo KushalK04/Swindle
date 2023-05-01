@@ -1,17 +1,19 @@
 import Head from "next/head";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import styles from '../styles/Ai.module.css'
 import BottomNav from "@/Components/NavBarBottom";
 
-export default function ChatBot() {
 
-  
+export default function ChatBot() {
 
   const [botResponse, setBotResponse] = useState("");
   const [inputValue, setInputValue] = useState("");
   const [chatLog, setChatLog] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [isThinking, setIsThinking] = useState(false);
+  const chatLogContainerRef = useRef(null);
+
 
   const sendMessage = (message) => {
     const url = "https://api.openai.com/v1/chat/completions";
@@ -32,20 +34,20 @@ export default function ChatBot() {
     };
   
     setIsLoading(true);
+    setIsThinking(true); // set isThinking to true
     axios
       .post(url, data, { headers: headers })
       .then((response) => {
         console.log(response);
         setBotResponse(response.data.choices[0].message.content);
         setIsLoading(false);
+        setIsThinking(false); // set isThinking to false when the response is received
       })
       .catch((error) => {
         setIsLoading(false);
         console.log(error);
       });
   };
-  
-
   
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -70,6 +72,13 @@ export default function ChatBot() {
     }
   }, [botResponse]);
 
+  useEffect(() => {
+    if (chatLogContainerRef.current) {
+      chatLogContainerRef.current.scrollTop = chatLogContainerRef.current.scrollHeight;
+    }
+  }, [chatLog]);
+
+
   return (
     <>
       <Head>
@@ -89,10 +98,11 @@ export default function ChatBot() {
 
         <div className={styles.robotholder}>
           <img src="/Asset_11.svg" className={styles.robot}/>
+          {isLoading && <div className={styles.thinking}>I'm thinking...</div>}
         </div>
         
         <div className={styles.Container}>
-          <div className={styles.scrollbar}>
+          <div className={styles.scrollbar} ref={chatLogContainerRef}>
           {chatLog.map((message, index) => (
             <div
               key={index}
@@ -122,6 +132,7 @@ export default function ChatBot() {
       </main>
     </>
   );
+
 }
 
 

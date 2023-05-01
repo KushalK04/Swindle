@@ -65,6 +65,7 @@ export default function BarChart() {
                     backgroundColor: 'rgba(240,101,67, 0.7)',  
                 }
             ]
+            
         })
     }, []) 
 
