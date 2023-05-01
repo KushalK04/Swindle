@@ -1,8 +1,9 @@
 import Head from "next/head";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import styles from '../styles/Ai.module.css'
 import BottomNav from "@/Components/NavBarBottom";
+
 
 export default function ChatBot() {
 
@@ -11,6 +12,8 @@ export default function ChatBot() {
   const [chatLog, setChatLog] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isThinking, setIsThinking] = useState(false);
+  const chatLogContainerRef = useRef(null);
+
 
   const sendMessage = (message) => {
     const url = "https://api.openai.com/v1/chat/completions";
@@ -69,6 +72,12 @@ export default function ChatBot() {
     }
   }, [botResponse]);
 
+  useEffect(() => {
+    if (chatLogContainerRef.current) {
+      chatLogContainerRef.current.scrollTop = chatLogContainerRef.current.scrollHeight;
+    }
+  }, [chatLog]);
+
 
   return (
     <>
@@ -93,7 +102,7 @@ export default function ChatBot() {
         </div>
         
         <div className={styles.Container}>
-          <div className={styles.scrollbar} id="scroll">
+          <div className={styles.scrollbar} ref={chatLogContainerRef}>
           {chatLog.map((message, index) => (
             <div
               key={index}
