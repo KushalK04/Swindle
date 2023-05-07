@@ -1,0 +1,8 @@
+.closer {
+    position: absolute;
+    top: 40%;
+    left: 41%;
+    color: white;
+    background-color: #F06543;
+    border-radius: 0.4rem;
+}

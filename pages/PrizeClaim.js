@@ -4,6 +4,9 @@ import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
 import { useContext } from 'react'
 import { UserSelectionsContext } from './data'
+import React, { useState } from 'react';
+import Overlay from '@/Components/Popup/popup1'
+
 
 var yes = process.env.NEXT_PUBLIC_YES;
 var no = process.env.NEXT_PUBLIC_NO;
@@ -11,6 +14,24 @@ var no = process.env.NEXT_PUBLIC_NO;
 
 export default function OneM() {
 
+  const [overlayOpen, setOverlayOpen] = useState(false);
+  const [showCloseButton, setShowCloseButton] = useState(false);
+
+  const handleOpenOverlay = () => {
+    setOverlayOpen(true);
+    setShowCloseButton(true);
+  };
+
+  const handleCloseOverlay = () => {
+    setOverlayOpen(false);
+    setShowCloseButton(false);
+  };
+
+  const handleShowCloseButton = () => {
+    setShowCloseButton(true);
+  };
+
+  
   const { updateSelections } = useContext(UserSelectionsContext)
 
   const handleNoClick = () => {
@@ -48,6 +69,20 @@ export default function OneM() {
             <Link href="/ScanVirus"><button className={styles.button} onClick={handleNoClick}><h4>{no}</h4></button></Link>
           </div>
         </div>
+
+
+        <div>
+          {!showCloseButton && (
+            <button className={styles.overlayButton} onClick={handleOpenOverlay}>Examples</button>
+          )}
+          {overlayOpen && (
+            <Overlay imageSrc="../Prizesscamemail.jpg" onClose={handleCloseOverlay} />
+          )}
+          {showCloseButton && (
+            <button className={styles.closer} onClick={handleCloseOverlay}>Close</button>
+          )}
+        </div>
+
         <BottomNav/>
       </main>
     </>
