@@ -56,7 +56,54 @@
         min-height: 100vh;
         background-color: var(--main-back)
     }
+
+    .overlayButton {
+        position: fixed;
+        top: 40%;
+        left: 41%;
+        color: white;
+        background-color: #F06543;
+        border-radius: 0.4rem;
+    }
     
+    .closer {
+        position: fixed;
+        top: 40%;
+        left: 41%;
+        color: white;
+        background-color: #F06543;
+        border-radius: 0.4rem;
+    }
+    
+    
+    .Overlay__wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+      
+    .Overlay__content {
+        position: relative;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        max-width: 90%;
+        max-height: 90%;
+        overflow: auto;
+    }
+      
+    .Overlay-image {
+        max-width: 50%;
+        max-height: 50%;
+        object-fit: contain;
+    }
 }
 
 
@@ -127,6 +174,54 @@
         padding: 1rem 1.1rem 0rem 1rem;
         min-height: 100vh;
         background-color: var(--main-back)
+    }
+
+    .overlayButton {
+        position: fixed;
+        top: 40%;
+        left: 41%;
+        color: white;
+        background-color: #F06543;
+        border-radius: 0.4rem;
+    }
+    
+    .closer {
+        position: fixed;
+        top: 40%;
+        left: 41%;
+        color: white;
+        background-color: #F06543;
+        border-radius: 0.4rem;
+    }
+    
+    
+    .Overlay__wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+      
+    .Overlay__content {
+        position: relative;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        max-width: 90%;
+        max-height: 90%;
+        overflow: auto;
+    }
+      
+    .Overlay-image {
+        max-width: 50%;
+        max-height: 50%;
+        object-fit: contain;
     }
 }
 
