@@ -9,8 +9,6 @@ export default function LogoAnimation() {
     return (
         <>
             <video src={LogoAnimation} autoPlay loop muted className={styles.animation} />
-
-
         </>
     )
 }
