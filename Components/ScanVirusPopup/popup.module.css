@@ -1,0 +1,30 @@
+.button {
+    background-color: #F06543;
+    color: #ffffff;
+    padding: 1rem 0rem 1rem 0rem;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.img {
+    width: 82%;
+    margin-left: 9%;
+    margin-top: -8%;
+}
+
+.back {
+    width: 89%;
+    background-color: var(--dark);
+    position: fixed;
+    left: 5.2%;
+    top: 25%;
+    height: 433px;
+    border-radius: 15px;
+}
+
+.h1 {
+    width: 8%;
+    margin-left: 92%;
+    margin-top: 0%;
+    color: var(--white);
+}

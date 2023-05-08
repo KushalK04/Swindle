@@ -4,6 +4,7 @@ import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
 import { useContext } from 'react'
 import { UserSelectionsContext } from './data'
+import Ad from '@/Components/ScanVirusPopup'
 
 var yes = process.env.NEXT_PUBLIC_YES;
 var no = process.env.NEXT_PUBLIC_NO;
@@ -41,6 +42,9 @@ export default function OneN() {
               Is the message saying that the device you are using has a virus and needs to run a scan?
             </h3>
           </div>
+
+          <Ad/>
+          
           <div className={styles.buttoncontainer}>
             <Link href="/GotScammed"><button className={styles.button} onClick={handleYesClick}><h4>{yes}</h4></button></Link>
             <Link href="/Investment"><button className={styles.button} onClick={handleNoClick}><h4>{no}</h4></button></Link>                

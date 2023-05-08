@@ -4,6 +4,7 @@ import BottomNav from '@/Components/NavBarBottom'
 import Link from 'next/link'
 import { useContext } from 'react'
 import { UserSelectionsContext } from './data'
+import Ad from '@/Components/SpellMistakesPopup'
 
 var yes = process.env.NEXT_PUBLIC_YES;
 var no = process.env.NEXT_PUBLIC_NO;
@@ -42,6 +43,9 @@ export default function OneP() {
               Does the message contain any spelling or grammar mistakes, or anything that disrupts the format of the message?
             </h3>
           </div>
+
+          <Ad/>
+          
           <div className={styles.buttoncontainer}>
             <Link href="/MabyeScammed"><button className={styles.button} onClick={handleYesClick}><h4>{yes}</h4></button></Link>
             <Link href="/NotScammed"><button className={styles.button} onClick={handleNoClick}><h4>{no}</h4></button></Link>

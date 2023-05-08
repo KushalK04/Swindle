@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { useContext } from 'react'
 import { UserSelectionsContext } from './data'
 import React, { useState } from 'react';
-import Overlay from '@/Components/Popup/popup1'
 import Ad from '@/Components/PrizeClaimPopup'
 
 
@@ -15,22 +14,7 @@ var no = process.env.NEXT_PUBLIC_NO;
 
 export default function OneM() {
 
-  const [overlayOpen, setOverlayOpen] = useState(false);
-  const [showCloseButton, setShowCloseButton] = useState(false);
 
-  const handleOpenOverlay = () => {
-    setOverlayOpen(true);
-    setShowCloseButton(true);
-  };
-
-  const handleCloseOverlay = () => {
-    setOverlayOpen(false);
-    setShowCloseButton(false);
-  };
-
-  const handleShowCloseButton = () => {
-    setShowCloseButton(true);
-  };
 
   
   const { updateSelections } = useContext(UserSelectionsContext)
