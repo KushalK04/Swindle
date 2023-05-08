@@ -6,6 +6,7 @@ import { useContext } from 'react'
 import { UserSelectionsContext } from './data'
 import React, { useState } from 'react';
 import Overlay from '@/Components/Popup/popup1'
+import Ad from '@/Components/PrizeClaimPopup'
 
 
 var yes = process.env.NEXT_PUBLIC_YES;
@@ -64,24 +65,17 @@ export default function OneM() {
               Is the message telling you that you won a prize or some form of reward that you can claim?
             </h3>
           </div>
-          <div className={styles.buttoncontainer}>
+
+          <Ad/>
+          
+          <div className={styles.buttoncontainer}>    
             <Link href="/Organization"><button className={styles.button} onClick={handleYesClick}><h4>{yes}</h4></button></Link>
             <Link href="/ScanVirus"><button className={styles.button} onClick={handleNoClick}><h4>{no}</h4></button></Link>
           </div>
         </div>
 
 
-        <div>
-          {!showCloseButton && (
-            <button className={styles.overlayButton} onClick={handleOpenOverlay}>Examples</button>
-          )}
-          {overlayOpen && (
-            <Overlay imageSrc="../Prizesscamemail.jpg" onClose={handleCloseOverlay} />
-          )}
-          {showCloseButton && (
-            <button className={styles.closer} onClick={handleCloseOverlay}>Close</button>
-          )}
-        </div>
+       
 
         <BottomNav/>
       </main>
