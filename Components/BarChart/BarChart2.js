@@ -49,6 +49,7 @@ export default function BarChart() {
                     color: 'white'
                 },
             },
+            
         })
 
         setChartData({
